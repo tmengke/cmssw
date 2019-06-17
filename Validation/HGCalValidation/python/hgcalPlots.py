@@ -1428,7 +1428,7 @@ for i in range(EE_min,EE_max+1):
     _DigiHits_Occupancy_XY_EE_zplus.append(PlotOnSideGroup("DigiHits_Occupancy_XY_EE_zplus_layer_{}".format(i), Plot("DigiOccupancy_XY_layer_{}".format(i), title="DigiHits_Occupancy_XY_EE_zplus", xtitle="layer_{}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_XY), ncols=1))
 
 _DigiHits_Occupancy_XY_HE_Silicon_zplus=[]
-for i in range(HEScintillator_min,HEScintillator_max+1):
+for i in range(HESilicon_min,HESilicon_max+1):
     _DigiHits_Occupancy_XY_HE_Silicon_zplus.append(PlotOnSideGroup("DigiHits_Occupancy_XY_HE_Silicon_zplus_layer_{}".format(i), Plot("DigiOccupancy_XY_layer_{}".format(i), title="DigiHits_Occupancy_XY_HE_Silicon_zplus", xtitle="layer_{}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_XY), ncols=1))
 
 _DigiHits_Occupancy_XY_HE_Scintillator_zplus=[]
@@ -1440,7 +1440,7 @@ for i in range(EE_min,EE_max+1):
     _DigiHits_Occupancy_XY_EE_zminus.append(PlotOnSideGroup("DigiHits_Occupancy_XY_EE_zminus_layer_{}".format(i), Plot("DigiOccupancy_XY_layer_{}".format(i), title="DigiHits_Occupancy_XY_EE_zminus", xtitle="layer_{}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_XY), ncols=1))
 
 _DigiHits_Occupancy_XY_HE_Silicon_zminus=[]
-for i in range(HEScintillator_min,HEScintillator_max+1):
+for i in range(HESilicon_min,HESilicon_max+1):
     _DigiHits_Occupancy_XY_HE_Silicon_zminus.append(PlotOnSideGroup("DigiHits_Occupancy_XY_HE_Silicon_zminus_layer_{}".format(i), Plot("DigiOccupancy_XY_layer_{}".format(i), title="DigiHits_Occupancy_XY_HE_Silicon_zminus", xtitle="layer_{}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_XY), ncols=1))
 
 _DigiHits_Occupancy_XY_HE_Scintillator_zminus=[]
