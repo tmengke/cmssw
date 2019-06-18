@@ -1267,7 +1267,7 @@ _SimHits_Occupancy_HE_Scintillator_zminus = PlotGroup("SimHits_Occupancy_HE_Scin
                                                                                                    Plot("HitOccupancy_Plus_layer_{}".format(i), title="SimHits_Occupancy_HE_Scintillator_zminus", xtitle="layer_{}".format(i), **_common) for i in range(HEScintillator_min,HEScintillator_max+1)
                                                                                                    ], ncols=4)
 
-_common_etaphi = dict(removeEmptyBins=False, xbinlabelsize=10, xbinlabeloption="d")
+_common_etaphi = dict(removeEmptyBins=False, xbinlabelsize=10, xbinlabeloption="d", ymin=None)
 
 _SimHits_EtaPhi_EE_zplus=[]
 for i in range(EE_min,EE_max+1):
@@ -1446,6 +1446,8 @@ for i in range(HESilicon_min,HESilicon_max+1):
 _DigiHits_Occupancy_XY_HE_Scintillator_zminus=[]
 for i in range(HEScintillator_min,HEScintillator_max+1):
     _DigiHits_Occupancy_XY_HE_Scintillator_zminus.append(PlotOnSideGroup("DigiHits_Occupancy_XY_HE_Scintillator_zminus_layer_{}".format(i), Plot("DigiOccupancy_XY_layer_{}".format(i), title="DigiHits_Occupancy_XY_HE_Scintillator_zminus", xtitle="layer_{}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_XY), ncols=1))
+
+_common = {"stat": True, "drawStyle": "hist", "staty": 0.65, "ymin": 0.1, "ylog": True}
 
 _DigiHits_TOA_EE = PlotGroup("DigiHits_TOA_EE", [
                                                  Plot("TOA_layer_{}".format(i), title="DigiHits_TOA_EE", xtitle="layer_{}".format(i), **_common) for i in range(EE_min,EE_max+1)
