@@ -1244,233 +1244,233 @@ _HitValidation = PlotGroup("HitValidation", [
 _common = {"stat": True, "drawStyle": "hist", "staty": 0.65}
 
 _SimHits_Occupancy_EE_zplus = PlotGroup("SimHits_Occupancy_EE_zplus", [
-                                                                       Plot("HitOccupancy_Plus_layer_{}".format(i), title="SimHits_Occupancy_EE_zplus", xtitle="layer_{}".format(i), **_common) for i in range(EE_min,EE_max+1)
+                                                                       Plot("HitOccupancy_Plus_layer_{}".format(i), title="SimHits_Occupancy_EE_zplus", xtitle="Layer {}".format(i), **_common) for i in range(EE_min,EE_max+1)
                                                                        ], ncols=4)
 
 _SimHits_Occupancy_HE_Silicon_zplus = PlotGroup("SimHits_Occupancy_HE_Silicon_zplus", [
-                                                                                       Plot("HitOccupancy_Plus_layer_{}".format(i), title="SimHits_HE_Occupancy_zplus", xtitle="layer_{}".format(i), **_common) for i in range(HESilicon_min,HESilicon_max+1)
+                                                                                       Plot("HitOccupancy_Plus_layer_{}".format(i), title="SimHits_HE_Occupancy_zplus", xtitle="Layer {}".format(i), **_common) for i in range(HESilicon_min,HESilicon_max+1)
                                                                                        ], ncols=4)
 
 _SimHits_Occupancy_HE_Scintillator_zplus = PlotGroup("SimHits_Occupancy_HE_Scintillator_zplus", [
-                                                                                                 Plot("HitOccupancy_Plus_layer_{}".format(i), title="SimHits_Occupancy_HE_Scintillator_zplus", xtitle="layer_{}".format(i), **_common) for i in range(HEScintillator_min,HEScintillator_max+1)
+                                                                                                 Plot("HitOccupancy_Plus_layer_{}".format(i), title="SimHits_Occupancy_HE_Scintillator_zplus", xtitle="Layer {}".format(i), **_common) for i in range(HEScintillator_min,HEScintillator_max+1)
                                                                                                  ], ncols=4)
 
 _SimHits_Occupancy_EE_zminus = PlotGroup("SimHits_Occupancy_EE_zminus", [
-                                                                         Plot("HitOccupancy_Plus_layer_{}".format(i), title="SimHits_Occupancy_EE_zminus", xtitle="layer_{}".format(i), **_common) for i in range(EE_min,EE_max+1)
+                                                                         Plot("HitOccupancy_Plus_layer_{}".format(i), title="SimHits_Occupancy_EE_zminus", xtitle="Layer {}".format(i), **_common) for i in range(EE_min,EE_max+1)
                                                                          ], ncols=4)
 
 _SimHits_Occupancy_HE_Silicon_zminus = PlotGroup("SimHits_Occupancy_HE_Silicon_zminus", [
-                                                                                         Plot("HitOccupancy_Plus_layer_{}".format(i), title="SimHits_Occupancy_HE_Silicon_zminus", xtitle="layer_{}".format(i), **_common) for i in range(HESilicon_min,HESilicon_max+1)
+                                                                                         Plot("HitOccupancy_Plus_layer_{}".format(i), title="SimHits_Occupancy_HE_Silicon_zminus", xtitle="Layer {}".format(i), **_common) for i in range(HESilicon_min,HESilicon_max+1)
                                                                                          ], ncols=4)
 
 _SimHits_Occupancy_HE_Scintillator_zminus = PlotGroup("SimHits_Occupancy_HE_Scintillator_zminus", [
-                                                                                                   Plot("HitOccupancy_Plus_layer_{}".format(i), title="SimHits_Occupancy_HE_Scintillator_zminus", xtitle="layer_{}".format(i), **_common) for i in range(HEScintillator_min,HEScintillator_max+1)
+                                                                                                   Plot("HitOccupancy_Plus_layer_{}".format(i), title="SimHits_Occupancy_HE_Scintillator_zminus", xtitle="Layer {}".format(i), **_common) for i in range(HEScintillator_min,HEScintillator_max+1)
                                                                                                    ], ncols=4)
 
 _common_etaphi = dict(removeEmptyBins=False, xbinlabelsize=10, xbinlabeloption="d", ymin=None)
 
 _SimHits_EtaPhi_EE_zplus=[]
 for i in range(EE_min,EE_max+1):
-    _SimHits_EtaPhi_EE_zplus.append(PlotOnSideGroup("EE_EtaPhi_zplus_layer_{}".format(i), Plot("EtaPhi_Plus_layer_{}".format(i), title="SimHits_EtaPhi_EE_zplus", xtitle="layer_{}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_etaphi), ncols=1))
+    _SimHits_EtaPhi_EE_zplus.append(PlotOnSideGroup("EE_EtaPhi_zplus_layer_{}".format(i), Plot("EtaPhi_Plus_layer_{}".format(i), title="SimHits_EtaPhi_EE_zplus", xtitle="Layer {}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_etaphi), ncols=1))
 
 _SimHits_EtaPhi_HE_Silicon_zplus=[]
 for i in range(HESilicon_min,HESilicon_max+1):
-    _SimHits_EtaPhi_HE_Silicon_zplus.append(PlotOnSideGroup("HE_Silicon_EtaPhi_zplus_layer_{}".format(i), Plot("EtaPhi_Plus_layer_{}".format(i), title="SimHits_EtaPhi_HE_Silicon_zplus", xtitle="layer_{}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_etaphi), ncols=1))
+    _SimHits_EtaPhi_HE_Silicon_zplus.append(PlotOnSideGroup("HE_Silicon_EtaPhi_zplus_layer_{}".format(i), Plot("EtaPhi_Plus_layer_{}".format(i), title="SimHits_EtaPhi_HE_Silicon_zplus", xtitle="Layer {}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_etaphi), ncols=1))
 
 _SimHits_EtaPhi_HE_Scintillator_zplus=[]
 for i in range(HEScintillator_min,HEScintillator_max+1):
-    _SimHits_EtaPhi_HE_Scintillator_zplus.append(PlotOnSideGroup("HE_Scintillator_EtaPhi_zplus_layer_{}".format(i), Plot("EtaPhi_Plus_layer_{}".format(i), title="SimHits_EtaPhi_HE_Scintillator_zplus", xtitle="layer_{}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_etaphi), ncols=1))
+    _SimHits_EtaPhi_HE_Scintillator_zplus.append(PlotOnSideGroup("HE_Scintillator_EtaPhi_zplus_layer_{}".format(i), Plot("EtaPhi_Plus_layer_{}".format(i), title="SimHits_EtaPhi_HE_Scintillator_zplus", xtitle="Layer {}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_etaphi), ncols=1))
 
 _SimHits_EtaPhi_EE_zminus=[]
 for i in range(EE_min,EE_max+1):
-    _SimHits_EtaPhi_EE_zminus.append(PlotOnSideGroup("EE_EtaPhi_zminus_layer_{}".format(i), Plot("EtaPhi_Minus_layer_{}".format(i), title="SimHits_EtaPhi_EE_zminus", xtitle="layer_{}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_etaphi), ncols=1))
+    _SimHits_EtaPhi_EE_zminus.append(PlotOnSideGroup("EE_EtaPhi_zminus_layer_{}".format(i), Plot("EtaPhi_Minus_layer_{}".format(i), title="SimHits_EtaPhi_EE_zminus", xtitle="Layer {}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_etaphi), ncols=1))
 
 _SimHits_EtaPhi_HE_Silicon_zminus=[]
 for i in range(HESilicon_min,HESilicon_max+1):
-    _SimHits_EtaPhi_HE_Silicon_zminus.append(PlotOnSideGroup("HE_Silicon_EtaPhi_zminus_layer_{}".format(i), Plot("EtaPhi_Minus_layer_{}".format(i), title="SimHits_EtaPhi_HE_Silicon_zminus", xtitle="layer_{}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_etaphi), ncols=1))
+    _SimHits_EtaPhi_HE_Silicon_zminus.append(PlotOnSideGroup("HE_Silicon_EtaPhi_zminus_layer_{}".format(i), Plot("EtaPhi_Minus_layer_{}".format(i), title="SimHits_EtaPhi_HE_Silicon_zminus", xtitle="Layer {}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_etaphi), ncols=1))
 
 _SimHits_EtaPhi_HE_Scintillator_zminus=[]
 for i in range(HEScintillator_min,HEScintillator_max+1):
-    _SimHits_EtaPhi_HE_Scintillator_zminus.append(PlotOnSideGroup("HE_Scintillator_EtaPhi_zminuslayer_{}".format(i), Plot("EtaPhi_Minus_layer_{}".format(i), title="SimHits_EtaPhi_HE_Scintillator_zminus", xtitle="layer_{}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_etaphi), ncols=1))
+    _SimHits_EtaPhi_HE_Scintillator_zminus.append(PlotOnSideGroup("HE_Scintillator_EtaPhi_zminuslayer_{}".format(i), Plot("EtaPhi_Minus_layer_{}".format(i), title="SimHits_EtaPhi_HE_Scintillator_zminus", xtitle="Layer {}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_etaphi), ncols=1))
 
 _common = {"stat": True, "drawStyle": "hist", "staty": 0.65, "ymin": 0.1, "ylog": True}
 
 _SimHits_Energy_EE_0 = PlotGroup("SimHits_Energy_Time_0_EE", [
-                                                              Plot("energy_time_0_layer_{}".format(i), title="SimHits_Energy_Time_0_EE", xtitle="layer_{}".format(i), **_common) for i in range(EE_min,EE_max+1)
+                                                              Plot("energy_time_0_layer_{}".format(i), title="SimHits_Energy_Time_0_EE", xtitle="Layer {}".format(i), **_common) for i in range(EE_min,EE_max+1)
                                                               ], ncols=4)
 
 _SimHits_Energy_HE_Silicon_0 = PlotGroup("SimHits_Energy_Time_0_HE_Silicon", [
-                                                                              Plot("energy_time_0_layer_{}".format(i), title="SimHits_Energy_Time_0_HE_Silicon", xtitle="layer_{}".format(i), **_common) for i in range(HESilicon_min,HESilicon_max+1)
+                                                                              Plot("energy_time_0_layer_{}".format(i), title="SimHits_Energy_Time_0_HE_Silicon", xtitle="Layer {}".format(i), **_common) for i in range(HESilicon_min,HESilicon_max+1)
                                                                               ], ncols=4)
 
 _SimHits_Energy_HE_Scintillator_0 = PlotGroup("SimHits_Energy_Time_0_HE_Scintillator", [
-                                                                                        Plot("energy_time_0_layer_{}".format(i), title="SimHits_Energy_Time_0_HE_Scintillator", xtitle="layer_{}".format(i), **_common) for i in range(HEScintillator_min,HEScintillator_max+1)
+                                                                                        Plot("energy_time_0_layer_{}".format(i), title="SimHits_Energy_Time_0_HE_Scintillator", xtitle="Layer {}".format(i), **_common) for i in range(HEScintillator_min,HEScintillator_max+1)
                                                                                         ], ncols=4)
 
 _SimHits_Energy_EE_1 = PlotGroup("SimHits_Energy_Time_1_EE", [
-                                                              Plot("energy_time_1_layer_{}".format(i), title="SimHits_Energy_Time_1_EE", xtitle="layer_{}".format(i), **_common) for i in range(EE_min,EE_max+1)
+                                                              Plot("energy_time_1_layer_{}".format(i), title="SimHits_Energy_Time_1_EE", xtitle="Layer {}".format(i), **_common) for i in range(EE_min,EE_max+1)
                                                               ], ncols=4)
 
 _SimHits_Energy_HE_Silicon_1 = PlotGroup("SimHits_Energy_Time_1_HE_Silicon", [
-                                                                              Plot("energy_time_1_layer_{}".format(i), title="SimHits_Energy_Time_1_HE_Silicon", xtitle="layer_{}".format(i), **_common) for i in range(HESilicon_min,HESilicon_max+1)
+                                                                              Plot("energy_time_1_layer_{}".format(i), title="SimHits_Energy_Time_1_HE_Silicon", xtitle="Layer {}".format(i), **_common) for i in range(HESilicon_min,HESilicon_max+1)
                                                                               ], ncols=4)
 
 _SimHits_Energy_HE_Scintillator_1 = PlotGroup("SimHits_Energy_Time_1_HE_Scintillator", [
-                                                                                        Plot("energy_time_1_layer_{}".format(i), title="SimHits_Energy_Time_1_HE_Scintillator", xtitle="layer_{}".format(i), **_common) for i in range(HEScintillator_min,HEScintillator_max+1)
+                                                                                        Plot("energy_time_1_layer_{}".format(i), title="SimHits_Energy_Time_1_HE_Scintillator", xtitle="Layer {}".format(i), **_common) for i in range(HEScintillator_min,HEScintillator_max+1)
                                                                                         ], ncols=4)
 
 _common = {"stat": True, "drawStyle": "hist", "staty": 0.65}
 
 _RecHits_Occupancy_EE_zplus = PlotGroup("RecHits_Occupancy_EE_zplus", [
-                                                                       Plot("HitOccupancy_Plus_layer_{}".format(i), title="RecHits_Occupancy_EE_zplus", xtitle="layer_{}".format(i), **_common) for i in range(EE_min,EE_max+1)
+                                                                       Plot("HitOccupancy_Plus_layer_{}".format(i), title="RecHits_Occupancy_EE_zplus", xtitle="Layer {}".format(i), **_common) for i in range(EE_min,EE_max+1)
                                                                        ], ncols=4)
 
 _RecHits_Occupancy_HE_Silicon_zplus = PlotGroup("RecHits_Occupancy_HE_Silicon_zplus", [
-                                                                                       Plot("HitOccupancy_Plus_layer_{}".format(i), title="RecHits_Occupancy_HE_Silicon_zplus", xtitle="layer_{}".format(i), **_common) for i in range(HESilicon_min,HESilicon_max+1)
+                                                                                       Plot("HitOccupancy_Plus_layer_{}".format(i), title="RecHits_Occupancy_HE_Silicon_zplus", xtitle="Layer {}".format(i), **_common) for i in range(HESilicon_min,HESilicon_max+1)
                                                                                        ], ncols=4)
 
 _RecHits_Occupancy_HE_Scintillator_zplus = PlotGroup("RecHits_Occupancy_HE_Scintillator_zplus", [
-                                                                                                 Plot("HitOccupancy_Plus_layer_{}".format(i), title="RecHits_Occupancy_HE_Scintillator_zplus", xtitle="layer_{}".format(i), **_common) for i in range(HEScintillator_min,HEScintillator_max+1)
+                                                                                                 Plot("HitOccupancy_Plus_layer_{}".format(i), title="RecHits_Occupancy_HE_Scintillator_zplus", xtitle="Layer {}".format(i), **_common) for i in range(HEScintillator_min,HEScintillator_max+1)
                                                                                                  ], ncols=4)
 
 _RecHits_Occupancy_EE_zminus = PlotGroup("RecHits_Occupancy_EE_zminus", [
-                                                                         Plot("HitOccupancy_Minus_layer_{}".format(i), title="RecHits_Occupancy_EE_zminus", xtitle="layer_{}".format(i), **_common) for i in range(EE_min,EE_max+1)
+                                                                         Plot("HitOccupancy_Minus_layer_{}".format(i), title="RecHits_Occupancy_EE_zminus", xtitle="Layer {}".format(i), **_common) for i in range(EE_min,EE_max+1)
                                                                          ], ncols=4)
 
 _RecHits_Occupancy_HE_Silicon_zminus = PlotGroup("RecHits_Occupancy_HE_Silicon_zminus", [
-                                                                                         Plot("HitOccupancy_Minus_layer_{}".format(i), title="RecHits_Occupancy_HE_Silicon_zminus", xtitle="layer_{}".format(i), **_common) for i in range(HESilicon_min,HESilicon_max+1)
+                                                                                         Plot("HitOccupancy_Minus_layer_{}".format(i), title="RecHits_Occupancy_HE_Silicon_zminus", xtitle="Layer {}".format(i), **_common) for i in range(HESilicon_min,HESilicon_max+1)
                                                                                          ], ncols=4)
 
 _RecHits_Occupancy_HE_Scintillator_zminus = PlotGroup("RecHits_Occupancy_HE_Scintillator_zminus", [
-                                                                                                   Plot("HitOccupancy_Minus_layer_{}".format(i),  title="RecHits_Occupancy_HE_Scintillator_zminus", xtitle="layer_{}".format(i), **_common) for i in range(HEScintillator_min,HEScintillator_max+1)
+                                                                                                   Plot("HitOccupancy_Minus_layer_{}".format(i),  title="RecHits_Occupancy_HE_Scintillator_zminus", xtitle="Layer {}".format(i), **_common) for i in range(HEScintillator_min,HEScintillator_max+1)
                                                                                                    ], ncols=4)
 
 _common = {"stat": True, "drawStyle": "hist", "staty": 0.65, "ymin": 0.1, "ylog": True}
 
 _RecHits_Energy_EE = PlotGroup("RecHits_Energy_EE", [
-                                                     Plot("energy_layer_{}".format(i), title="RecHits_Energy_EE", xtitle="layer_{}".format(i), **_common) for i in range(EE_min,EE_max+1)
+                                                     Plot("energy_layer_{}".format(i), title="RecHits_Energy_EE", xtitle="Layer {}".format(i), **_common) for i in range(EE_min,EE_max+1)
                                                      ], ncols=4)
 
 _RecHits_Energy_HE_Silicon = PlotGroup("RecHits_Energy_HE_Silicon", [
-                                                                     Plot("energy_layer_{}".format(i), title="RecHits_Energy_HE_Silicon", xtitle="layer_{}".format(i), **_common) for i in range(HESilicon_min,HESilicon_max+1)
+                                                                     Plot("energy_layer_{}".format(i), title="RecHits_Energy_HE_Silicon", xtitle="Layer {}".format(i), **_common) for i in range(HESilicon_min,HESilicon_max+1)
                                                                      ], ncols=4)
 
 _RecHits_Energy_HE_Scintillator = PlotGroup("RecHits_Energy_HE_Scintillator", [
-                                                                               Plot("energy_layer_{}".format(i), title="RecHits_Energy_HE_Scintillator", xtitle="layer_{}".format(i), **_common) for i in range(HEScintillator_min,HEScintillator_max+1)
+                                                                               Plot("energy_layer_{}".format(i), title="RecHits_Energy_HE_Scintillator", xtitle="Layer {}".format(i), **_common) for i in range(HEScintillator_min,HEScintillator_max+1)
                                                                                ], ncols=4)
 
 _RecHits_EtaPhi_EE_zplus=[]
 for i in range(EE_min,EE_max+1):
-    _RecHits_EtaPhi_EE_zplus.append(PlotOnSideGroup("RecHits_EtaPhi_EE_zplus_layer_{}".format(i), Plot("EtaPhi_Plus_layer_{}".format(i), title="RecHits_EtaPhi_EE_zplus", xtitle="layer_{}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_etaphi), ncols=1))
+    _RecHits_EtaPhi_EE_zplus.append(PlotOnSideGroup("RecHits_EtaPhi_EE_zplus_layer_{}".format(i), Plot("EtaPhi_Plus_layer_{}".format(i), title="RecHits_EtaPhi_EE_zplus", xtitle="Layer {}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_etaphi), ncols=1))
 
 _RecHits_EtaPhi_HE_Silicon_zplus=[]
 for i in range(HESilicon_min,HESilicon_max+1):
-    _RecHits_EtaPhi_HE_Silicon_zplus.append(PlotOnSideGroup("RecHits_EtaPhi_HE_Silicon_zplus_layer_{}".format(i), Plot("EtaPhi_Plus_layer_{}".format(i), title="RecHits_EtaPhi_HE_Silicon_zplus", xtitle="layer_{}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_etaphi), ncols=1))
+    _RecHits_EtaPhi_HE_Silicon_zplus.append(PlotOnSideGroup("RecHits_EtaPhi_HE_Silicon_zplus_layer_{}".format(i), Plot("EtaPhi_Plus_layer_{}".format(i), title="RecHits_EtaPhi_HE_Silicon_zplus", xtitle="Layer {}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_etaphi), ncols=1))
 
 _RecHits_EtaPhi_HE_Scintillator_zplus=[]
 for i in range(HEScintillator_min,HEScintillator_max+1):
-    _RecHits_EtaPhi_HE_Scintillator_zplus.append(PlotOnSideGroup("RecHits_EtaPhi_HE_Scintillator_zplus_layer_{}".format(i), Plot("EtaPhi_Plus_layer_{}".format(i), title="RecHits_EtaPhi_HE_Scintillator_zplus", xtitle="layer_{}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_etaphi), ncols=1))
+    _RecHits_EtaPhi_HE_Scintillator_zplus.append(PlotOnSideGroup("RecHits_EtaPhi_HE_Scintillator_zplus_layer_{}".format(i), Plot("EtaPhi_Plus_layer_{}".format(i), title="RecHits_EtaPhi_HE_Scintillator_zplus", xtitle="Layer {}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_etaphi), ncols=1))
 
 _RecHits_EtaPhi_EE_zminus=[]
 for i in range(EE_min,EE_max+1):
-    _RecHits_EtaPhi_EE_zminus.append(PlotOnSideGroup("RecHits_EtaPhi_EE_zminus_layer_{}".format(i), Plot("EtaPhi_Minus_layer_{}".format(i), title="RecHits_EtaPhi_EE_zminus", xtitle="layer_{}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_etaphi), ncols=1))
+    _RecHits_EtaPhi_EE_zminus.append(PlotOnSideGroup("RecHits_EtaPhi_EE_zminus_layer_{}".format(i), Plot("EtaPhi_Minus_layer_{}".format(i), title="RecHits_EtaPhi_EE_zminus", xtitle="Layer {}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_etaphi), ncols=1))
 
 _RecHits_EtaPhi_HE_Silicon_zminus=[]
 for i in range(HESilicon_min,HESilicon_max+1):
-    _RecHits_EtaPhi_HE_Silicon_zminus.append(PlotOnSideGroup("RecHits_EtaPhi_HE_Silicon_zminus_layer_{}".format(i), Plot("EtaPhi_Minus_layer_{}".format(i), title="RecHits_EtaPhi_HE_Silicon_zminus", xtitle="layer_{}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_etaphi), ncols=1))
+    _RecHits_EtaPhi_HE_Silicon_zminus.append(PlotOnSideGroup("RecHits_EtaPhi_HE_Silicon_zminus_layer_{}".format(i), Plot("EtaPhi_Minus_layer_{}".format(i), title="RecHits_EtaPhi_HE_Silicon_zminus", xtitle="Layer {}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_etaphi), ncols=1))
 
 _RecHits_EtaPhi_HE_Scintillator_zminus=[]
 for i in range(HEScintillator_min,HEScintillator_max+1):
-    _RecHits_EtaPhi_HE_Scintillator_zminus.append(PlotOnSideGroup("RecHits_EtaPhi_HE_Scintillator_zminus_layer_{}".format(i), Plot("EtaPhi_Minus_layer_{}".format(i), title="RecHits_EtaPhi_HE_Scintillator_zminus", xtitle="layer_{}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_etaphi), ncols=1))
+    _RecHits_EtaPhi_HE_Scintillator_zminus.append(PlotOnSideGroup("RecHits_EtaPhi_HE_Scintillator_zminus_layer_{}".format(i), Plot("EtaPhi_Minus_layer_{}".format(i), title="RecHits_EtaPhi_HE_Scintillator_zminus", xtitle="Layer {}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_etaphi), ncols=1))
 
 _DigiHits_ADC_EE = PlotGroup("DigiHits_ADC_EE", [
-                                                 Plot("ADC_layer_{}".format(i), title="DigiHits_ADC_EE", xtitle="layer_{}".format(i), **_common) for i in range(EE_min,EE_max+1)
+                                                 Plot("ADC_layer_{}".format(i), title="DigiHits_ADC_EE", xtitle="Layer {}".format(i), **_common) for i in range(EE_min,EE_max+1)
                                                  ], ncols=4)
 
 _DigiHits_ADC_HE_Silicon = PlotGroup("DigiHits_ADC_HE_Silicon", [
-                                                                 Plot("ADC_layer_{}".format(i), title="DigiHits_ADC_HE_Silicon", xtitle="layer_{}".format(i), **_common) for i in range(HESilicon_min,HESilicon_max+1)
+                                                                 Plot("ADC_layer_{}".format(i), title="DigiHits_ADC_HE_Silicon", xtitle="Layer {}".format(i), **_common) for i in range(HESilicon_min,HESilicon_max+1)
                                                                  ], ncols=4)
 
 _DigiHits_ADC_HE_Scintillator = PlotGroup("DigiHits_ADC_HE_Scintillator", [
-                                                                           Plot("ADC_layer_{}".format(i), title="DigiHits_ADC_HE_Scintillator", xtitle="layer_{}".format(i), **_common) for i in range(HEScintillator_min,HEScintillator_max+1)
+                                                                           Plot("ADC_layer_{}".format(i), title="DigiHits_ADC_HE_Scintillator", xtitle="Layer {}".format(i), **_common) for i in range(HEScintillator_min,HEScintillator_max+1)
                                                                            ], ncols=4)
 
 _common = {"stat": True, "drawStyle": "hist", "staty": 0.65}
 
 _DigiHits_Occupancy_EE_zplus = PlotGroup("DigiHits_Occupancy_EE_zplus", [
-                                                                         Plot("DigiOccupancy_Plus_layer_{}".format(i), title="DigiHits_Occupancy_EE_zplus", xtitle="layer_{}".format(i), **_common) for i in range(EE_min,EE_max+1)
+                                                                         Plot("DigiOccupancy_Plus_layer_{}".format(i), title="DigiHits_Occupancy_EE_zplus", xtitle="Layer {}".format(i), **_common) for i in range(EE_min,EE_max+1)
                                                                          ], ncols=4)
 
 _DigiHits_Occupancy_HE_Silicon_zplus = PlotGroup("DigiHits_Occupancy_HE_Silicon_zplus", [
-                                                                                         Plot("DigiOccupancy_Plus_layer_{}".format(i), title="DigiHits_Occupancy_HE_Silicon_zplus", xtitle="layer_{}".format(i), **_common) for i in range(HESilicon_min,HESilicon_max+1)
+                                                                                         Plot("DigiOccupancy_Plus_layer_{}".format(i), title="DigiHits_Occupancy_HE_Silicon_zplus", xtitle="Layer {}".format(i), **_common) for i in range(HESilicon_min,HESilicon_max+1)
                                                                                          ], ncols=4)
 
 _DigiHits_Occupancy_HE_Scintillator_zplus = PlotGroup("DigiHits_Occupancy_HE_Scintillator_zplus", [
-                                                                                                   Plot("DigiOccupancy_Plus_layer_{}".format(i), title="DigiHits_Occupancy_HE_Scintillator_zplus", xtitle="layer_{}".format(i), **_common) for i in range(HEScintillator_min,HEScintillator_max+1)
+                                                                                                   Plot("DigiOccupancy_Plus_layer_{}".format(i), title="DigiHits_Occupancy_HE_Scintillator_zplus", xtitle="Layer {}".format(i), **_common) for i in range(HEScintillator_min,HEScintillator_max+1)
                                                                                                    ], ncols=4)
 
 _DigiHits_Occupancy_EE_zminus = PlotGroup("DigiHits_Occupancy_EE_zminus", [
-                                                                           Plot("DigiOccupancy_Minus_layer_{}".format(i), title="DigiHits_Occupancy_EE_zminus", xtitle="layer_{}".format(i), **_common) for i in range(EE_min,EE_max+1)
+                                                                           Plot("DigiOccupancy_Minus_layer_{}".format(i), title="DigiHits_Occupancy_EE_zminus", xtitle="Layer {}".format(i), **_common) for i in range(EE_min,EE_max+1)
                                                                            ], ncols=4)
 
 _DigiHits_Occupancy_HE_Silicon_zminus = PlotGroup("DigiHits_Occupancy_HE_Silicon_zminus", [
-                                                                                           Plot("DigiOccupancy_Minus_layer_{}".format(i), title="DigiHits_Occupancy_HE_Silicon_zminus", xtitle="layer_{}".format(i), **_common) for i in range(HESilicon_min,HESilicon_max+1)
+                                                                                           Plot("DigiOccupancy_Minus_layer_{}".format(i), title="DigiHits_Occupancy_HE_Silicon_zminus", xtitle="Layer {}".format(i), **_common) for i in range(HESilicon_min,HESilicon_max+1)
                                                                                            ], ncols=4)
 
 _DigiHits_Occupancy_HE_Scintillator_zminus = PlotGroup("DigiHits_Occupancy_HE_Scintillator_zminus", [
-                                                                                                     Plot("DigiOccupancy_Minus_layer_{}".format(i), title="DigiHits_Occupancy_HE_Scintillator_zminus", xtitle="layer_{}".format(i), **_common) for i in range(HEScintillator_min,HEScintillator_max+1)
+                                                                                                     Plot("DigiOccupancy_Minus_layer_{}".format(i), title="DigiHits_Occupancy_HE_Scintillator_zminus", xtitle="Layer {}".format(i), **_common) for i in range(HEScintillator_min,HEScintillator_max+1)
                                                                                                      ], ncols=4)
 
 _common_XY = dict(removeEmptyBins=True, xbinlabelsize=10, xbinlabeloption="d", ymin=None)
 
 _DigiHits_Occupancy_XY_EE_zplus=[]
 for i in range(EE_min,EE_max+1):
-    _DigiHits_Occupancy_XY_EE_zplus.append(PlotOnSideGroup("DigiHits_Occupancy_XY_EE_zplus_layer_{}".format(i), Plot("DigiOccupancy_XY_layer_{}".format(i), title="DigiHits_Occupancy_XY_EE_zplus", xtitle="layer_{}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_XY), ncols=1))
+    _DigiHits_Occupancy_XY_EE_zplus.append(PlotOnSideGroup("DigiHits_Occupancy_XY_EE_zplus_layer_{}".format(i), Plot("DigiOccupancy_XY_layer_{}".format(i), title="DigiHits_Occupancy_XY_EE_zplus", xtitle="Layer {}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_XY), ncols=1))
 
 _DigiHits_Occupancy_XY_HE_Silicon_zplus=[]
 for i in range(HESilicon_min,HESilicon_max+1):
-    _DigiHits_Occupancy_XY_HE_Silicon_zplus.append(PlotOnSideGroup("DigiHits_Occupancy_XY_HE_Silicon_zplus_layer_{}".format(i), Plot("DigiOccupancy_XY_layer_{}".format(i), title="DigiHits_Occupancy_XY_HE_Silicon_zplus", xtitle="layer_{}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_XY), ncols=1))
+    _DigiHits_Occupancy_XY_HE_Silicon_zplus.append(PlotOnSideGroup("DigiHits_Occupancy_XY_HE_Silicon_zplus_layer_{}".format(i), Plot("DigiOccupancy_XY_layer_{}".format(i), title="DigiHits_Occupancy_XY_HE_Silicon_zplus", xtitle="Layer {}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_XY), ncols=1))
 
 _DigiHits_Occupancy_XY_HE_Scintillator_zplus=[]
 for i in range(HEScintillator_min,HEScintillator_max+1):
-    _DigiHits_Occupancy_XY_HE_Scintillator_zplus.append(PlotOnSideGroup("DigiHits_Occupancy_XY_HE_Scintillator_zplus_layer_{}".format(i), Plot("DigiOccupancy_XY_layer_{}".format(i), title="DigiHits_Occupancy_XY_HE_Scintillator_zplus", xtitle="layer_{}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_XY), ncols=1))
+    _DigiHits_Occupancy_XY_HE_Scintillator_zplus.append(PlotOnSideGroup("DigiHits_Occupancy_XY_HE_Scintillator_zplus_layer_{}".format(i), Plot("DigiOccupancy_XY_layer_{}".format(i), title="DigiHits_Occupancy_XY_HE_Scintillator_zplus", xtitle="Layer {}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_XY), ncols=1))
 
 _DigiHits_Occupancy_XY_EE_zminus=[]
 for i in range(EE_min,EE_max+1):
-    _DigiHits_Occupancy_XY_EE_zminus.append(PlotOnSideGroup("DigiHits_Occupancy_XY_EE_zminus_layer_{}".format(i), Plot("DigiOccupancy_XY_layer_{}".format(i), title="DigiHits_Occupancy_XY_EE_zminus", xtitle="layer_{}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_XY), ncols=1))
+    _DigiHits_Occupancy_XY_EE_zminus.append(PlotOnSideGroup("DigiHits_Occupancy_XY_EE_zminus_layer_{}".format(i), Plot("DigiOccupancy_XY_layer_{}".format(i), title="DigiHits_Occupancy_XY_EE_zminus", xtitle="Layer {}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_XY), ncols=1))
 
 _DigiHits_Occupancy_XY_HE_Silicon_zminus=[]
 for i in range(HESilicon_min,HESilicon_max+1):
-    _DigiHits_Occupancy_XY_HE_Silicon_zminus.append(PlotOnSideGroup("DigiHits_Occupancy_XY_HE_Silicon_zminus_layer_{}".format(i), Plot("DigiOccupancy_XY_layer_{}".format(i), title="DigiHits_Occupancy_XY_HE_Silicon_zminus", xtitle="layer_{}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_XY), ncols=1))
+    _DigiHits_Occupancy_XY_HE_Silicon_zminus.append(PlotOnSideGroup("DigiHits_Occupancy_XY_HE_Silicon_zminus_layer_{}".format(i), Plot("DigiOccupancy_XY_layer_{}".format(i), title="DigiHits_Occupancy_XY_HE_Silicon_zminus", xtitle="Layer {}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_XY), ncols=1))
 
 _DigiHits_Occupancy_XY_HE_Scintillator_zminus=[]
 for i in range(HEScintillator_min,HEScintillator_max+1):
-    _DigiHits_Occupancy_XY_HE_Scintillator_zminus.append(PlotOnSideGroup("DigiHits_Occupancy_XY_HE_Scintillator_zminus_layer_{}".format(i), Plot("DigiOccupancy_XY_layer_{}".format(i), title="DigiHits_Occupancy_XY_HE_Scintillator_zminus", xtitle="layer_{}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_XY), ncols=1))
+    _DigiHits_Occupancy_XY_HE_Scintillator_zminus.append(PlotOnSideGroup("DigiHits_Occupancy_XY_HE_Scintillator_zminus_layer_{}".format(i), Plot("DigiOccupancy_XY_layer_{}".format(i), title="DigiHits_Occupancy_XY_HE_Scintillator_zminus", xtitle="Layer {}".format(i), drawStyle="COLZ", adjustMarginLeft=0.1, adjustMarginRight=0.1, **_common_XY), ncols=1))
 
 _common = {"stat": True, "drawStyle": "hist", "staty": 0.65, "ymin": 0.1, "ylog": True}
 
 _DigiHits_TOA_EE = PlotGroup("DigiHits_TOA_EE", [
-                                                 Plot("TOA_layer_{}".format(i), title="DigiHits_TOA_EE", xtitle="layer_{}".format(i), **_common) for i in range(EE_min,EE_max+1)
+                                                 Plot("TOA_layer_{}".format(i), title="DigiHits_TOA_EE", xtitle="Layer {}".format(i), **_common) for i in range(EE_min,EE_max+1)
                                                  ], ncols=4)
 
 _DigiHits_TOA_HE_Silicon = PlotGroup("DigiHits_TOA_HE_Silicon", [
-                                                                 Plot("TOA_layer_{}".format(i), title="DigiHits_TOA_HE_Silicon", xtitle="layer_{}".format(i), **_common) for i in range(HESilicon_min,HESilicon_max+1)
+                                                                 Plot("TOA_layer_{}".format(i), title="DigiHits_TOA_HE_Silicon", xtitle="Layer {}".format(i), **_common) for i in range(HESilicon_min,HESilicon_max+1)
                                                                  ], ncols=4)
 
 _DigiHits_TOA_HE_Scintillator = PlotGroup("DigiHits_TOA_HE_Scintillator", [
-                                                                           Plot("TOA_layer_{}".format(i), title="DigiHits_TOA_HE_Scintillator", xtitle="layer_{}".format(i), **_common) for i in range(HEScintillator_min,HEScintillator_max+1)
+                                                                           Plot("TOA_layer_{}".format(i), title="DigiHits_TOA_HE_Scintillator", xtitle="Layer {}".format(i), **_common) for i in range(HEScintillator_min,HEScintillator_max+1)
                                                                            ], ncols=4)
 
 _DigiHits_TOT_EE = PlotGroup("DigiHits_TOT_EE", [
-                                                 Plot("TOT_layer_{}".format(i), title="DigiHits_TOT_EE", xtitle="layer_{}".format(i), **_common) for i in range(EE_min,EE_max+1)
+                                                 Plot("TOT_layer_{}".format(i), title="DigiHits_TOT_EE", xtitle="Layer {}".format(i), **_common) for i in range(EE_min,EE_max+1)
                                                  ], ncols=4)
 
 _DigiHits_TOT_HE_Silicon = PlotGroup("DigiHits_TOT_HE_Silicon", [
-                                                                 Plot("TOT_layer_{}".format(i), title="DigiHits_TOT_HE_Silicon", xtitle="layer_{}".format(i), **_common) for i in range(HESilicon_min,HESilicon_max+1)
+                                                                 Plot("TOT_layer_{}".format(i), title="DigiHits_TOT_HE_Silicon", xtitle="Layer {}".format(i), **_common) for i in range(HESilicon_min,HESilicon_max+1)
                                                                  ], ncols=4)
 
 _DigiHits_TOT_HE_Scintillator = PlotGroup("DigiHits_TOT_HE_Scintillator", [
-                                                                           Plot("TOT_layer_{}".format(i), title="DigiHits_TOT_HE_Scintillator", xtitle="layer_{}".format(i), **_common) for i in range(HEScintillator_min,HEScintillator_max+1)
+                                                                           Plot("TOT_layer_{}".format(i), title="DigiHits_TOT_HE_Scintillator", xtitle="Layer {}".format(i), **_common) for i in range(HEScintillator_min,HEScintillator_max+1)
                                                                            ], ncols=4)
 
 #=================================================================================================
